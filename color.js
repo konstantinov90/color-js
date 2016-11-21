@@ -350,8 +350,8 @@ if (!net.brehaut) { net.brehaut = {}; }
             if (lower in css_colors) {
               css = css_colors[lower];
             }
-
-            if (!css.match(/^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/)) {
+            console.log(css.match(/^#?([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/))
+            if (!css.match(/^#?([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/)) {
               return;
             }
 
